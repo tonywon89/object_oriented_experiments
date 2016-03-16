@@ -5,6 +5,12 @@ class SubClass < SuperClass
 
   include Module1
 
+  attr_reader :name
+
+  def initialize(name = "Tony")
+    @name = name
+  end
+
   def do_something
     # puts "Did something"
     self.instance_one = "Hello"

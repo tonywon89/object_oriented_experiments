@@ -9,4 +9,8 @@ class OtherClass < SuperClass
   def instance_two
     @instance_two
   end
+
+  def say_hello_to_sub(sub_instance)
+    "Hello, #{sub_instance.name}"
+  end
 end
